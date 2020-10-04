@@ -5,8 +5,8 @@
 
 body {
   height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(89, 99, 37, 0.3)), to(rgba(44, 51, 3, 0.2))), url("../images/army.png");
-  background: linear-gradient(0deg, rgba(89, 99, 37, 0.3), rgba(44, 51, 3, 0.2)), url("../images/army.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(#5963254d), to(#2c330333)), url("../images/army.png");
+  background: linear-gradient(0deg, #5963254d, #2c330333), url("../images/army.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -54,15 +54,14 @@ div .container form div input {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  line-height: 1.2;
   width: 100%;
   height: 40px;
   background: transparent;
-  margin-bottom: 30px;
   border: groove;
   border-color: darkgreen;
-  text-align: center;
+  border-radius: 10px;
   outline: none;
+  text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -84,17 +83,15 @@ div .container form div input::placeholder {
 }
 
 div .container form div button {
+  color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background: transparent;
-  color: #000000;
-  line-height: 1.2;
-  padding: 0 40px;
   min-width: 120px;
   height: 50px;
-  border-radius: 25px;
+  background: transparent;
   border: groove;
   border-color: darkgreen;
+  border-radius: 25px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   cursor: pointer;
