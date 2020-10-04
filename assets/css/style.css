@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(89, 99, 37, 0.3)), to(rgba(44, 51, 3, 0.2))), url("../images/army.png");
+  background: linear-gradient(0deg, rgba(89, 99, 37, 0.3), rgba(44, 51, 3, 0.2)), url("../images/army.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div .logo {
+  width: 300px;
+  height: 280px;
+}
+
+div .container {
+  width: 30%;
+  border-radius: 10px;
+  padding: 20px 50px 60px 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#596325), to(#2c3303));
+  background: linear-gradient(#596325, #2c3303);
+}
+
+div .container form div span {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+div .container form div input {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  margin-bottom: 30px;
+  border: groove;
+  border-color: darkgreen;
+  text-align: center;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+div .container form div input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+div .container form div input:-ms-input-placeholder {
+  color: #000000;
+}
+
+div .container form div input::-ms-input-placeholder {
+  color: #000000;
+}
+
+div .container form div input::placeholder {
+  color: #000000;
+}
+
+div .container form div button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: transparent;
+  color: #000000;
+  line-height: 1.2;
+  padding: 0 40px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  border: groove;
+  border-color: darkgreen;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+}
+
+div .container form div button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#596325), to(#2c3303));
+  background: linear-gradient(#596325, #2c3303);
+}
+/*# sourceMappingURL=style.css.map */
