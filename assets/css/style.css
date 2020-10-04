@@ -3,7 +3,22 @@
   padding: 0;
 }
 
-body {
+#landing-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(#5963254d), to(#2c330333)), url("../images/army.png");
   background: linear-gradient(0deg, #5963254d, #2c330333), url("../images/army.png");
@@ -11,7 +26,35 @@ body {
   background-size: cover;
 }
 
-div {
+#landing-page .logo {
+  width: 320px;
+  height: 290px;
+}
+
+#landing-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  border-radius: 10px;
+  padding: 20px 50px 50px 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#596325), to(#2c3303));
+  background: linear-gradient(#596325, #2c3303);
+}
+
+#landing-page .container form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,20 +72,7 @@ div {
           align-items: center;
 }
 
-div .logo {
-  width: 300px;
-  height: 280px;
-}
-
-div .container {
-  width: 30%;
-  border-radius: 10px;
-  padding: 20px 50px 60px 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#596325), to(#2c3303));
-  background: linear-gradient(#596325, #2c3303);
-}
-
-div .container form div span {
+#landing-page .container form div span {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   color: #000000;
@@ -50,7 +80,7 @@ div .container form div span {
   margin-top: 20px;
 }
 
-div .container form div input {
+#landing-page .container form div input {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -66,23 +96,23 @@ div .container form div input {
   margin-top: 20px;
 }
 
-div .container form div input::-webkit-input-placeholder {
+#landing-page .container form div input::-webkit-input-placeholder {
   color: #000000;
 }
 
-div .container form div input:-ms-input-placeholder {
+#landing-page .container form div input:-ms-input-placeholder {
   color: #000000;
 }
 
-div .container form div input::-ms-input-placeholder {
+#landing-page .container form div input::-ms-input-placeholder {
   color: #000000;
 }
 
-div .container form div input::placeholder {
+#landing-page .container form div input::placeholder {
   color: #000000;
 }
 
-div .container form div button {
+#landing-page .container form div button {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -99,8 +129,22 @@ div .container form div button {
   margin-top: 20px;
 }
 
-div .container form div button:hover {
+#landing-page .container form div button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#596325), to(#2c3303));
   background: linear-gradient(#596325, #2c3303);
+}
+
+#game {
+  background: -webkit-gradient(linear, left bottom, left top, from(#59632541), to(#2c33033a)), url("../images/line.jpg");
+  background: linear-gradient(0deg, #59632541, #2c33033a), url("../images/line.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#game .logo {
+  width: 140px;
+  height: 130px;
 }
 /*# sourceMappingURL=style.css.map */
