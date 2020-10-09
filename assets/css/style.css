@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #landing-page {
@@ -84,7 +85,7 @@
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  width: 100%;
+  width: 90%;
   height: 40px;
   background: transparent;
   border: groove;
@@ -134,17 +135,43 @@
   background: linear-gradient(#596325, #2c3303);
 }
 
-#game {
+#intro-game {
   background: -webkit-gradient(linear, left bottom, left top, from(#59632541), to(#2c33033a)), url("../images/line.jpg");
   background: linear-gradient(0deg, #59632541, #2c33033a), url("../images/line.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#intro-game .logo {
+  width: 38rem;
+  height: 37rem;
+}
+
+#game {
+  background: -webkit-gradient(linear, left bottom, left top, from(#59632596), to(#2c330354)), url("../images/grass.jpg");
+  background: linear-gradient(0deg, #59632596, #2c330354), url("../images/grass.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
 #game .logo {
-  width: 140px;
-  height: 130px;
+  width: 150px;
+  height: 140px;
+}
+
+#game .sheep {
+  height: 25rem;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */

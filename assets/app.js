@@ -1,7 +1,5 @@
-// const play = () => {
-//   document.getElementById("landing-page").style.display = "none";
-// };
 
-// window.onload = function () {
-//   document.getElementsByClassName("loader").style.display = "none";
-// };
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('game').scrollIntoView({behavior: "smooth", block: "end"})
+});
