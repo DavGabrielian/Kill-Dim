@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 #landing-page {
@@ -162,7 +162,8 @@
   background: -webkit-gradient(linear, left bottom, left top, from(#59632596), to(#2c330354)), url("../images/grass.jpg");
   background: linear-gradient(0deg, #59632596, #2c330354), url("../images/grass.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 150vh;
+  padding-top: 10rem;
 }
 
 #game .logo {

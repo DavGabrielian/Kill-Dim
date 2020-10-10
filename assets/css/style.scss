@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 @mixin flexbox($dir, $justify, $align) {
@@ -132,7 +132,8 @@
   background: linear-gradient(0deg, #59632596, #2c330354),
     url("../images/grass.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 150vh;
+  padding-top: 10rem;
 
   .logo {
     width: 150px;

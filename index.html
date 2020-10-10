@@ -14,16 +14,36 @@
     <section id="landing-page">
       <img class="logo" src="assets/images/Flogo.png" alt="KillDim logo" />
       <div class="container">
-        <form href="#game" action="game.html">
+        <form>
           <div>
             <span>LOG IN</span>
             <!-- <img src="assets/images/KillDim.png" alt="KillDim vochxar" /> -->
           </div>
           <div>
             <input id="username" placeholder="username" />
-            <button onclick="setUsername()">PLAY</button>
+            <button type="button" onclick="saveData()">PLAY</button>
           </div>
         </form>
+      </div>
+    </section>
+    <section id="game">
+      <img class="logo" src="assets/images/Flogo.png" alt="KillDim logo" />
+
+      <div>
+        <img class="sheep" src="assets/images/sheep01.png" alt="sheep" />
+        <img class="sheep" src="assets/images/sheep01.png" alt="sheep" />
+        <img
+          style="transform: scaleX(-1)"
+          class="sheep"
+          src="assets/images/sheep01.png"
+          alt="sheep"
+        />
+        <img
+          style="transform: scaleX(-1)"
+          class="sheep"
+          src="assets/images/sheep01.png"
+          alt="sheep"
+        />
       </div>
     </section>
     <script src="assets/app.js"></script>
