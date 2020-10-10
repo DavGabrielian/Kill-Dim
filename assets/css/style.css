@@ -55,7 +55,7 @@
   background: linear-gradient(#596325, #2c3303);
 }
 
-#landing-page .container form div {
+#landing-page .container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +73,7 @@
           align-items: center;
 }
 
-#landing-page .container form div span {
+#landing-page .container div span {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   color: #000000;
@@ -81,7 +81,7 @@
   margin-top: 20px;
 }
 
-#landing-page .container form div input {
+#landing-page .container div input {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -97,23 +97,23 @@
   margin-top: 20px;
 }
 
-#landing-page .container form div input::-webkit-input-placeholder {
+#landing-page .container div input::-webkit-input-placeholder {
   color: #000000;
 }
 
-#landing-page .container form div input:-ms-input-placeholder {
+#landing-page .container div input:-ms-input-placeholder {
   color: #000000;
 }
 
-#landing-page .container form div input::-ms-input-placeholder {
+#landing-page .container div input::-ms-input-placeholder {
   color: #000000;
 }
 
-#landing-page .container form div input::placeholder {
+#landing-page .container div input::placeholder {
   color: #000000;
 }
 
-#landing-page .container form div button {
+#landing-page .container div button {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -130,18 +130,36 @@
   margin-top: 20px;
 }
 
-#landing-page .container form div button:hover {
+#landing-page .container div button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#596325), to(#2c3303));
   background: linear-gradient(#596325, #2c3303);
 }
 
-#intro-game {
-  background: -webkit-gradient(linear, left bottom, left top, from(#59632541), to(#2c33033a)), url("../images/line.jpg");
-  background: linear-gradient(0deg, #59632541, #2c33033a), url("../images/line.jpg");
-  background-repeat: no-repeat;
+#game {
+  background: -webkit-gradient(linear, left bottom, left top, from(#59632562), to(#2c33035b)), url("../images/grass.jpg");
+  background: linear-gradient(0deg, #59632562, #2c33035b), url("../images/grass.jpg");
   background-size: cover;
-  background-position: center;
   height: 100vh;
+}
+
+#game nav {
+  background: -webkit-gradient(linear, left bottom, left top, from(#596325c9), to(#2c330375));
+  background: linear-gradient(0deg, #596325c9, #2c330375);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#game nav .logo {
+  width: 130px;
+  height: 120px;
+}
+
+#game div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,26 +171,16 @@
           align-items: center;
 }
 
-#intro-game .logo {
-  width: 38rem;
-  height: 37rem;
-}
-
-#game {
-  background: -webkit-gradient(linear, left bottom, left top, from(#59632596), to(#2c330354)), url("../images/grass.jpg");
-  background: linear-gradient(0deg, #59632596, #2c330354), url("../images/grass.jpg");
+#game div .cage {
+  background: -webkit-gradient(linear, left bottom, left top, from(#59632580), to(#2c330367)), url("../images/grass.jpg");
+  background: linear-gradient(0deg, #59632580, #2c330367), url("../images/grass.jpg");
   background-size: cover;
-  height: 150vh;
-  padding-top: 10rem;
+  width: 75%;
+  border: 5px dashed #654321;
 }
 
-#game .logo {
-  width: 150px;
-  height: 140px;
-}
-
-#game .sheep {
-  height: 25rem;
-  width: auto;
+#game div .cage .sheep {
+  height: 30rem;
+  width: 25rem;
 }
 /*# sourceMappingURL=style.css.map */
