@@ -132,13 +132,54 @@
   background-size: cover;
   height: 100vh;
   nav {
-    background: linear-gradient(0deg, #596325c9, #2c330375);
-    display: flex;
-    justify-content: space-between;
+    @include flexbox(row, space-between, center);
+    background: linear-gradient(0deg, #596325a8, #2c330375);
     margin-bottom: 10px;
     .logo {
-      width: 130px;
-      height: 120px;
+      width: 140px;
+      height: 130px;
+    }
+    div {
+      margin: 0 10px 0 20px;
+
+      .counter {
+        @include flexbox(column, center, center);
+        width: 100px;
+        height: 100px;
+        background-color: #5261096c;
+        color: white;
+        border-style: double;
+        .counter-display {
+          font-size: 60px;
+        }
+        .text {
+          font-size: 20px;
+          color: white;
+          text-align: center;
+        }
+      }
+      .counter-button {
+        button {
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          background-color: #5261096c;
+          color: white;
+          border-color: white;
+          border-style: inset;
+          font-size: 50px;
+          cursor: pointer;
+          outline: none;
+          z-index: 1;
+
+          &:hover {
+            background-color: #526109d2;
+            font-size: 60px;
+            transition: 0.5s;
+            border-style: outset;
+          }
+        }
+      }
     }
   }
 
@@ -151,12 +192,25 @@
       background: linear-gradient(0deg, #59632580, #2c330367),
         url("../images/grass.jpg");
       background-size: cover;
+      height: 75vh;
       width: 75%;
       border: 5px dashed #654321;
 
       .sheep {
-        height: 30rem;
-        width: 25rem;
+        height: 17rem;
+        width: 13rem;
+      }
+    }
+  }
+  .modal {
+    .sheep {
+    }
+    div {
+      .counter-display {
+      }
+      .counter-minus {
+      }
+      .counter-plus {
       }
     }
   }

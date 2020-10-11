@@ -13,3 +13,25 @@ saveData = () => {
     console.log(input.value)
 }
 
+let count = 0;
+let counterDisplay = document.querySelector('.counter-display');
+let counterMinus = document.querySelector('.counter-minus');
+let counterPlus = document.querySelector('.counter-plus');
+
+updateDisplay();
+
+counterPlus.addEventListener("click",()=>{
+    count++;
+    updateDisplay();
+});
+
+counterMinus.addEventListener("click",()=>{
+    if (count>0) {
+        count--;
+        updateDisplay();
+    }
+});
+
+function updateDisplay(){
+    counterDisplay.innerHTML = count;
+};

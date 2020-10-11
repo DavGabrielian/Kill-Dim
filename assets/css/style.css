@@ -143,20 +143,88 @@
 }
 
 #game nav {
-  background: -webkit-gradient(linear, left bottom, left top, from(#596325c9), to(#2c330375));
-  background: linear-gradient(0deg, #596325c9, #2c330375);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#596325a8), to(#2c330375));
+  background: linear-gradient(0deg, #596325a8, #2c330375);
   margin-bottom: 10px;
 }
 
 #game nav .logo {
-  width: 130px;
-  height: 120px;
+  width: 140px;
+  height: 130px;
+}
+
+#game nav div {
+  margin: 0 10px 0 20px;
+}
+
+#game nav div .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #5261096c;
+  color: white;
+  border-style: double;
+}
+
+#game nav div .counter .counter-display {
+  font-size: 60px;
+}
+
+#game nav div .counter .text {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+#game nav div .counter-button button {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #5261096c;
+  color: white;
+  border-color: white;
+  border-style: inset;
+  font-size: 50px;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+
+#game nav div .counter-button button:hover {
+  background-color: #526109d2;
+  font-size: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-style: outset;
 }
 
 #game div {
@@ -175,12 +243,13 @@
   background: -webkit-gradient(linear, left bottom, left top, from(#59632580), to(#2c330367)), url("../images/grass.jpg");
   background: linear-gradient(0deg, #59632580, #2c330367), url("../images/grass.jpg");
   background-size: cover;
+  height: 75vh;
   width: 75%;
   border: 5px dashed #654321;
 }
 
 #game div .cage .sheep {
-  height: 30rem;
-  width: 25rem;
+  height: 17rem;
+  width: 13rem;
 }
 /*# sourceMappingURL=style.css.map */
