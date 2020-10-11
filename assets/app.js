@@ -35,3 +35,12 @@ counterMinus.addEventListener("click",()=>{
 function updateDisplay(){
     counterDisplay.innerHTML = count;
 };
+
+openModal = () =>{
+    document.getElementById('modal').style.display='block';
+}
+
+closeModal = () =>{
+    document.getElementById('modal').style.display='none';
+}
+

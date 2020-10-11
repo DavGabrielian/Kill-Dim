@@ -221,7 +221,7 @@
 
 #game nav div .counter-button button:hover {
   background-color: #526109d2;
-  font-size: 60px;
+  font-size: 65px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-style: outset;
@@ -251,5 +251,50 @@
 #game div .cage .sheep {
   height: 17rem;
   width: 13rem;
+}
+
+#game #modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#game #modal .modal-content {
+  position: relative;
+  background-color: #596325c9;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #2c330367;
+  width: 50%;
+  height: 60%;
+}
+
+#game #modal .modal-content .close {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  background-color: transparent;
+  color: #aaaaaa;
+  font-size: 45px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#game #modal .modal-content .close:hover {
+  color: #000;
+}
+
+#game #modal .modal-content .modal-body .sheep {
+  height: 30rem;
+  width: 25rem;
 }
 /*# sourceMappingURL=style.css.map */

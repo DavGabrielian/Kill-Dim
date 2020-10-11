@@ -31,7 +31,7 @@
             <span class="text"> azeris</span>
           </div>
           <div class="counter-button">
-            <button onclick="openModal()">+</button>
+            <button id="myBtn" onclick="openModal()">+</button>
           </div>
         </div>
       </nav>
@@ -40,12 +40,17 @@
           <img class="sheep" src="assets/images/sheep01.png" alt="sheep" />
         </div>
       </div>
-      <div class="modal">
-        <img class="sheep" src="assets/images/sheep01.png" alt="sheep" />
-        <div>
-          <span class="counter-display"></span>
-          <button class="counter-minus">-</button>
-          <button class="counter-plus">+</button>
+      <div id="modal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()">&times;</button>
+          <div class="modal-body">
+            <img class="sheep" src="assets/images/sheep01.png" alt="sheep" />
+            <div>
+              <span class="counter-display"></span>
+              <button class="counter-minus">-</button>
+              <button class="counter-plus">+</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
