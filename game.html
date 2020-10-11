@@ -27,7 +27,7 @@
         <img class="logo" src="assets/images/Flogo.png" alt="KillDim logo" />
         <div>
           <div class="counter">
-            <span class="counter-display"></span>
+            <span id="display" class="counter-display"></span>
             <span class="text"> azeris</span>
           </div>
           <div class="counter-button">
@@ -37,16 +37,17 @@
       </nav>
       <div>
         <div class="cage">
-          <img class="sheep" src="assets/images/sheep01.png" alt="sheep" />
         </div>
       </div>
       <div id="modal">
         <div class="modal-content">
-            <button class="close" onclick="closeModal()">&times;</button>
+          <button class="close" onclick="closeModal()">&times;</button>
           <div class="modal-body">
             <img class="sheep" src="assets/images/sheep01.png" alt="sheep" />
+            <div class="counter">
+              <span id="modal-display" class="counter-display"></span>
+            </div>
             <div>
-              <span class="counter-display"></span>
               <button class="counter-minus">-</button>
               <button class="counter-plus">+</button>
             </div>

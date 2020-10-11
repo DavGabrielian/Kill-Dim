@@ -216,12 +216,12 @@
 
     .modal-content {
       position: relative;
-      background-color: #596325c9;
+      background-color: #6e8029;
       margin: auto;
       padding: 20px;
       border: 1px solid #2c330367;
       width: 50%;
-      height: 60%;
+      height: 70%;
       .close {
         position: absolute;
         top: 0;
@@ -238,16 +238,69 @@
         }
       }
       .modal-body {
+        @include flexbox(column, center, center);
         .sheep {
-          height: 30rem;
+          height: 32rem;
           width: 25rem;
         }
-        div {
+        .counter {
+          position: absolute;
+          top: 10px;
+          @include flexbox(column, center, center);
+          width: 100px;
+          height: 100px;
+          background-color: #5261096c;
+          color: white;
+          border-style: double;
           .counter-display {
+            font-size: 60px;
           }
+        }
+        div {
+          position: absolute;
+          bottom: 10px;
           .counter-minus {
+            border-radius: 10%;
+            width: 90px;
+            height: 50px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: outset;
+            font-size: 40px;
+            cursor: pointer;
+            outline: none;
+            z-index: 1;
+
+            &:hover {
+              background-color: #526109b9;
+              transition: 0.5s;
+              font-size: 44px;
+
+              border-style: inset;
+            }
           }
+
           .counter-plus {
+            border-radius: 10%;
+            width: 90px;
+            height: 50px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: inset;
+            font-size: 40px;
+            cursor: pointer;
+            outline: none;
+            z-index: 1;
+
+            &:hover {
+              background-color: #526109b9;
+              transition: 0.5s;
+              font-size: 44px;
+
+              border-style: outset;
+            }
           }
         }
       }

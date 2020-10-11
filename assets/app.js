@@ -14,15 +14,18 @@ saveData = () => {
 }
 
 let count = 0;
-let counterDisplay = document.querySelector('.counter-display');
+let counterDisplay = document.getElementById('display');
+let counterDisplayModal = document.getElementById('modal-display');
 let counterMinus = document.querySelector('.counter-minus');
 let counterPlus = document.querySelector('.counter-plus');
+let cage = document.querySelector('.cage')
 
 updateDisplay();
 
 counterPlus.addEventListener("click",()=>{
     count++;
     updateDisplay();
+    addSheep();
 });
 
 counterMinus.addEventListener("click",()=>{
@@ -34,6 +37,8 @@ counterMinus.addEventListener("click",()=>{
 
 function updateDisplay(){
     counterDisplay.innerHTML = count;
+    counterDisplayModal.innerHTML = count;
+    
 };
 
 openModal = () =>{
@@ -44,3 +49,6 @@ closeModal = () =>{
     document.getElementById('modal').style.display='none';
 }
 
+addSheep =()=>{
+    cage.innerHTML="<img class='sheep' src='assets/images/sheep01.png' alt='sheep' />"
+}
