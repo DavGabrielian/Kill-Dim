@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 @mixin flexbox($dir, $justify, $align) {
@@ -130,14 +130,23 @@
   background: linear-gradient(0deg, #59632562, #2c33035b),
     url("../images/grass.jpg");
   background-size: cover;
-  height: 100vh;
+  height: auto;
   nav {
     @include flexbox(row, space-between, center);
     background: linear-gradient(0deg, #596325a8, #2c330375);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+
     .logo {
       width: 140px;
       height: 130px;
+    }
+    .user-name-box {
+      @include flexbox(column, center, center);
+      width: 50%;
+      height: 100%;
+      color: white;
+      font-size: larger;
     }
     div {
       margin: 0 10px 0 20px;
@@ -161,8 +170,8 @@
       .counter-button {
         button {
           border-radius: 50%;
-          width: 80px;
-          height: 80px;
+          width: 100px;
+          height: 70px;
           background-color: #5261096c;
           color: white;
           border-color: white;
@@ -174,7 +183,7 @@
 
           &:hover {
             background-color: #526109d2;
-            font-size: 65px;
+            font-size: 60px;
             transition: 0.5s;
             border-style: outset;
           }
@@ -195,10 +204,16 @@
       height: 75vh;
       width: 75%;
       border: 5px dashed #654321;
+      margin-bottom: 10px;
 
-      .sheep {
-        height: 17rem;
-        width: 13rem;
+      #sheep {
+        height: 8rem;
+        width: 10rem;
+        background: url("../images/sheep01.png") no-repeat;
+        display: inline-block;
+        background-size: cover;
+        background-position-y: 50%;
+        background-position-x: 50%;
       }
     }
   }
