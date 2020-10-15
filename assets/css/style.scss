@@ -4,6 +4,53 @@
   overflow: hidden;
 }
 
+@keyframes animation {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  10% {
+    left: -200px;
+    top: -100px;
+  }
+  20% {
+    left: -100px;
+    top: -150px;
+  }
+  30% {
+    left: 200px;
+    top: -80px;
+  }
+  40% {
+    left: 100px;
+    top: -10px;
+  }
+  50% {
+    left: -140px;
+    top: 30px;
+  }
+  60% {
+    left: -190px;
+    top: 100px;
+  }
+  70% {
+    left: -150px;
+    top: 180px;
+  }
+  80% {
+    left: 50px;
+    top: 90px;
+  }
+  90% {
+    left: 200px;
+    top: -10px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
 @mixin flexbox($dir, $justify, $align) {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +261,11 @@
         background-size: cover;
         background-position-y: 50%;
         background-position-x: 50%;
+        position: relative;
+        animation-name: animation;
+        animation-duration: 30s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
       }
     }
   }
