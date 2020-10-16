@@ -3,7 +3,7 @@ saveData = () => {
 
     
     let input = document.getElementById('username');
-    localStorage.setItem("userName",input.value);
+    sessionStorage.setItem("userName",input.value);
     const state = input.value;
     const title = ''
     const url = 'game.html'
@@ -13,7 +13,7 @@ saveData = () => {
 
 }
 
-let username = localStorage.getItem('userName');
+let username = sessionStorage.getItem('userName');
 document.getElementById('user-name').innerHTML = username+"'s";
 
 let count = 0;
