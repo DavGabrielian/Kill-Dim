@@ -59,10 +59,12 @@ let imgArr = [];
 addSheep = () =>{
     imgArr.push('assets/images/sheep01.png');
     cage.innerHTML='';
-    imgArr.forEach(image=> {   
-        let img = document.createElement('span'); 
-        img.setAttribute('id', 'sheep');
-        cage.appendChild(img);        
+    imgArr.forEach((image, index) => {   
+        image= document.createElement('span'); 
+        image.setAttribute('id', 'sheep');
+        image.style.animationDelay = `${index*2}s`
+        cage.appendChild(image); 
+            
     });
     console.log(imgArr)
 }
